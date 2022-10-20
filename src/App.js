@@ -22,6 +22,7 @@ import Identity_4 from './Screen/Homepage/Profile/identityFolder/identity_4';
 import Identity_5 from './Screen/Homepage/Profile/identityFolder/identity_5';
 import Identity_6 from './Screen/Homepage/Profile/identityFolder/identity_6';
 import Verification from './Screen/Homepage/Profile/identityFolder/Verification';
+import Passport from './Screen/Homepage/Profile/identityFolder/Passport';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -43,6 +44,7 @@ function App() {
         <Route path='identity_5' element={<Identity_5 />} />
         <Route path='identity_6' element={<Identity_6 />} />
         <Route path='verification' element={<Verification />} />
+        <Route path='passport' element={<Passport />} />
         {/* <Route path='recipereviewcard' element={<RecipeReviewCard />} /> */}
 
         <Route path='home' element={<Home />} />

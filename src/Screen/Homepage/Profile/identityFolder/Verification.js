@@ -7,6 +7,7 @@ import {
   Typography,
   Card,
 } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 import NavigateBeforeOutlinedIcon from '@mui/icons-material/NavigateBeforeOutlined';
 import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined';
 import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined';
@@ -31,7 +32,7 @@ const useStyles = makeStyles({
     width: '256px',
     height: '24px',
     left: '30px',
-    top: '104px',
+    top: '124px',
     fontWeight: 700,
     fontSize: '20px',
     color: '#1E1E1E',
@@ -53,6 +54,7 @@ const Verification = () => {
               background: ' #F5D3FA',
               borderRadius: '8px',
               marginTop: '0.5rem',
+              padding: '1.3rem',
             }}
           >
             <NavigateBeforeOutlinedIcon />
@@ -60,7 +62,10 @@ const Verification = () => {
           <Typography
             style={{
               marginLeft: '5.5rem',
-              marginTop: '0.5rem',
+
+              marginTop: '1rem',
+              color: '#8A8A8A',
+              fontWeight: 700,
             }}
           >
             ID DOCUMENT
@@ -70,6 +75,8 @@ const Verification = () => {
           Select the document type
         </Typography>
         <Paper
+          component={Link}
+          to='/passport'
           elevation={2}
           style={{
             display: 'flex',
@@ -84,6 +91,7 @@ const Verification = () => {
             alignItems: 'center',
             gap: '16px',
             borderRadius: '4px',
+            textDecorationLine: 'none',
           }}
         >
           <Paper elevation={0}>
