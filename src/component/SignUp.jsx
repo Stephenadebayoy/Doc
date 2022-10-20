@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { makeStyles } from '@material-ui/core';
-import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
+//import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import { Box, Button, TextField, Typography } from '@material-ui/core';
 import { useNavigate } from 'react-router-dom';
 import Quickmode2 from '../asset/Quick.png';

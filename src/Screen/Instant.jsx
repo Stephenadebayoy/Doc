@@ -85,7 +85,7 @@ const Account = () => {
           width: '312px',
           height: '50px',
           borderRadius: 8,
-          padding: '16px 24px 16px 24px',
+
           background: '#5d106b',
           color: '#fff',
           top: '649px',

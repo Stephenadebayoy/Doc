@@ -118,7 +118,7 @@ const Identity = () => {
                     style={{
                       display: 'flex',
                       alignItems: 'center',
-                      background: '#FFC107',
+
                       width: '95px',
                       height: '24px',
                       top: '16px',
