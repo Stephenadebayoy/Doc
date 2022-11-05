@@ -11,10 +11,10 @@ import {
   CardActions,
 } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import WarningAmberOutlinedIcon from '@mui/icons-material/WarningAmberOutlined';
-import NavigateBeforeOutlinedIcon from '@mui/icons-material/NavigateBeforeOutlined';
-import CameraAltOutlinedIcon from '@mui/icons-material/CameraAltOutlined';
-import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutlineOutlined';
+
+import NavigateBeforeOutlinedIcon from '@material-ui/icons/NavigateBeforeOutlined';
+import CameraAltOutlinedIcon from '@material-ui/icons/CameraAltOutlined';
+import CheckCircleOutlineOutlinedIcon from '@material-ui/icons/CheckCircleOutlineOutlined';
 
 const useStyles = makeStyles({
   root: {

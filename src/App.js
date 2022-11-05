@@ -11,7 +11,7 @@ import Account from '../src/Screen/Account';
 import Instant from '../src/Screen/Instant';
 import Budget from './Screen/Budget';
 import Homepage from './Screen/Homepage/Homepage';
-import RecipeReviewCard from './Card';
+//import RecipeReviewCard from './Card';
 import Profile from './Screen/Homepage/Profile/Profile';
 import AccountSettings from './Screen/Homepage/Profile/AccountSettings';
 import PhoneNumber from './Screen/Homepage/Profile/PhoneNumber';
@@ -23,6 +23,14 @@ import Identity_5 from './Screen/Homepage/Profile/identityFolder/identity_5';
 import Identity_6 from './Screen/Homepage/Profile/identityFolder/identity_6';
 import Verification from './Screen/Homepage/Profile/identityFolder/Verification';
 import Passport from './Screen/Homepage/Profile/identityFolder/Passport';
+import Help from './Helpcenter/GetHelp';
+import CallUs from './Helpcenter/CallUs';
+import Faqs from './Helpcenter/Faqs';
+import Security from './Security/Security';
+import Confirmpin from './Security/Confirmpin';
+import Transactionpin from './Security/Transactionpin';
+import Transaction from './Security/Transaction';
+import Transaction_2 from './Security/Transaction_2';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -45,6 +53,14 @@ function App() {
         <Route path='identity_6' element={<Identity_6 />} />
         <Route path='verification' element={<Verification />} />
         <Route path='passport' element={<Passport />} />
+        <Route path='gethelp' element={<Help />} />
+        <Route path='callus' element={<CallUs />} />
+        <Route path='faq' element={<Faqs />} />
+        <Route path='security' element={<Security />} />
+        <Route path='confirmpin' element={<Confirmpin />} />
+        <Route path='transactionpin' element={<Transactionpin />} />
+        <Route path='transaction' element={<Transaction />} />
+        <Route path='transaction_2' element={<Transaction_2 />} />
         {/* <Route path='recipereviewcard' element={<RecipeReviewCard />} /> */}
 
         <Route path='home' element={<Home />} />

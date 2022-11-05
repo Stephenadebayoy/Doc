@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Frame3 from '../asset/Frame3.png';
 import Logo from '../asset/bro.png';
 import { makeStyles } from '@material-ui/core';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ArrowForwardOutlined from '@material-ui/icons/ArrowForwardOutlined';
 
 const useStyles = makeStyles({
   root: {
@@ -100,7 +100,7 @@ const Budget = () => {
         type='submit'
         variant='contained'
       >
-        Get started <ArrowForwardIcon />
+        Get started <ArrowForwardOutlined />
       </Button>
     </Box>
   );

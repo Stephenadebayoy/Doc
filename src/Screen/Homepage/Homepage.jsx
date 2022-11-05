@@ -10,21 +10,22 @@ import {
   AppBar,
   Card,
   CardContent,
+  IconButton,
 } from '@material-ui/core';
 import Country from '../../asset/country.png';
-import CallMadeIcon from '@mui/icons-material/CallMade';
+import CallMadeOutlined from '@material-ui/icons/CallMadeOutlined';
 import Logo from '../../asset/profile.png';
 import Notify from '../../asset/notify.png';
 import { Link } from 'react-router-dom';
-import IconButton from '@material-ui/core/IconButton';
-import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
-import CallReceivedIcon from '@mui/icons-material/CallReceived';
+
+import AddCircleOutlineOutlined from '@material-ui/icons/AddCircleOutlineOutlined';
+import CallReceivedOutlined from '@material-ui/icons/CallReceivedOutlined';
 import RecipeReviewCard from '../../Card';
-import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-import NearMeOutlinedIcon from '@mui/icons-material/NearMeOutlined';
-import SyncAltOutlinedIcon from '@mui/icons-material/SyncAltOutlined';
-import AccessTimeOutlinedIcon from '@mui/icons-material/AccessTimeOutlined';
-import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
+import HomeOutlined from '@material-ui/icons/HomeOutlined';
+import NearMeOutlined from '@material-ui/icons/NearMeOutlined';
+import SyncAltOutlined from '@material-ui/icons/SyncAltOutlined';
+import AccessTimeOutlined from '@material-ui/icons/AccessTimeOutlined';
+import PersonOutlineOutlined from '@material-ui/icons/PersonOutlineOutlined';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '370px',
@@ -64,32 +65,32 @@ const Homepage = () => {
         >
           <Button style={{ display: 'block' }}>
             <IconButton>
-              <HomeOutlinedIcon />
+              <HomeOutlined />
             </IconButton>
             <Typography style={{ fontSize: '10px' }}>Home</Typography>
           </Button>
           <Button style={{ display: 'block' }}>
             <IconButton>
-              <NearMeOutlinedIcon />
+              <NearMeOutlined />
             </IconButton>
 
             <Typography style={{ fontSize: '10px' }}>Pay Merchant</Typography>
           </Button>
           <Button style={{ display: 'block' }}>
             <IconButton>
-              <SyncAltOutlinedIcon />
+              <SyncAltOutlined />
             </IconButton>
             <Typography style={{ fontSize: '10px' }}>Transfer</Typography>
           </Button>
           <Button style={{ display: 'block' }}>
             <IconButton>
-              <AccessTimeOutlinedIcon />
+              <AccessTimeOutlined />
             </IconButton>
             <Typography style={{ fontSize: '10px' }}>Budget</Typography>
           </Button>
           <Button component={Link} to='/profile' style={{ display: 'block' }}>
             <IconButton>
-              <Person2OutlinedIcon />
+              <PersonOutlineOutlined />
             </IconButton>
             <Typography style={{ fontSize: '10px' }}>Profile</Typography>
           </Button>
@@ -163,7 +164,7 @@ const Homepage = () => {
             }}
           >
             <IconButton>
-              <AddCircleOutlineIcon />
+              <AddCircleOutlineOutlined />
             </IconButton>
             <Typography variant='12px' style={{ color: '#000' }}>
               Add funds
@@ -219,7 +220,7 @@ const Homepage = () => {
                   height: '32px',
                 }}
               >
-                <CallReceivedIcon />
+                <CallReceivedOutlined />
               </IconButton>
               <Typography style={{ paddingLeft: '1rem' }}>
                 Wallet Funding <br /> <br />{' '}
@@ -256,7 +257,7 @@ const Homepage = () => {
                   height: '32px',
                 }}
               >
-                <CallMadeIcon />
+                <CallMadeOutlined />
               </IconButton>
               <Typography style={{ paddingLeft: '1rem' }}>
                 Dulra

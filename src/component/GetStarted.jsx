@@ -3,7 +3,7 @@ import { Box, Button, TextField, Typography } from '@material-ui/core';
 import { useState } from 'react';
 import { makeStyles } from '@material-ui/core';
 import IconButton from '@material-ui/core';
-import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
+import ArrowRightAltOutlined from '@material-ui/icons/ArrowRightAltOutlined';
 import AddIcon from '@material-ui/icons/Add';
 import { ThemeProvider, createTheme } from '@material-ui/core';
 
@@ -161,7 +161,7 @@ const GetStarted = () => {
             variant='contained'
           >
             {isSignup ? 'Sign Up' : 'SIGN IN'}
-            {!isSignup ? <ArrowCircleRightIcon /> : ''}
+            {!isSignup ? <ArrowRightAltOutlined /> : ''}
           </Button>
         ) : (
           <Button

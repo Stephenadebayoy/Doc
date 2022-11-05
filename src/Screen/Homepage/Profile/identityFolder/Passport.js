@@ -8,10 +8,10 @@ import {
   Button,
 } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import NavigateBeforeOutlinedIcon from '@mui/icons-material/NavigateBeforeOutlined';
-import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
-import CameraAltOutlinedIcon from '@mui/icons-material/CameraAltOutlined';
-import CloudDownloadOutlinedIcon from '@mui/icons-material/CloudDownloadOutlined';
+import NavigateBeforeOutlinedIcon from '@material-ui/icons/NavigateBeforeOutlined';
+import LibraryBooksIcon from '@material-ui/icons/LibraryBooksOutlined';
+import CameraAltOutlinedIcon from '@material-ui/icons/CameraAltOutlined';
+import CloudDownloadOutlinedIcon from '@material-ui/icons/CloudDownloadOutlined';
 
 const useStyles = makeStyles({
   root: {

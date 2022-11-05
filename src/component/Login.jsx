@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Button, Typography, TextField } from '@material-ui/core';
-import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
+import ArrowRightAltTwoTone from '@material-ui/icons/ArrowRightAltTwoTone';
 import { makeStyles } from '@material-ui/core';
 //import Quickmode from '../asset/Quick.png';
 
@@ -116,7 +116,7 @@ const Signin = () => {
           variant='contained'
         >
           SIGN IN
-          <ArrowCircleRightIcon />
+          <ArrowRightAltTwoTone />
         </Button>
       </Box>
     </form>

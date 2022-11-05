@@ -8,21 +8,22 @@ import {
   CardContent,
   IconButton,
   Button,
+  Avatar,
 } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined';
+import KeyboardArrowRightOutlined from '@material-ui/icons/KeyboardArrowRightOutlined';
 import Profile1 from '../../../asset/profile1.png';
-import ManageAccountsOutlinedIcon from '@mui/icons-material/ManageAccountsOutlined';
-import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined';
-import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
-import GroupAddOutlinedIcon from '@mui/icons-material/GroupAddOutlined';
-import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
-import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
-import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-import NearMeOutlinedIcon from '@mui/icons-material/NearMeOutlined';
-import SyncAltOutlinedIcon from '@mui/icons-material/SyncAltOutlined';
-import AccessTimeOutlinedIcon from '@mui/icons-material/AccessTimeOutlined';
-import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
+import User from '../../../asset/user-settings.png';
+import PermIdentityOutlined from '@material-ui/icons/PermIdentityOutlined';
+import HelpOutlineOutlined from '@material-ui/icons/HelpOutlineOutlined';
+import GroupAddOutlined from '@material-ui/icons/GroupAddOutlined';
+import SettingsOutlinedIcon from '@material-ui/icons/SettingsOutlined';
+import { LogoutOutlined } from '@ant-design/icons';
+import HomeOutlined from '@material-ui/icons/HomeOutlined';
+import NearMeOutlined from '@material-ui/icons/NearMeOutlined';
+import SyncAltOutlined from '@material-ui/icons/SyncAltOutlined';
+import AccessTimeOutlined from '@material-ui/icons/AccessTimeOutlined';
+import PersonOutlineOutlined from '@material-ui/icons/PersonOutlineOutlined';
 
 const useStyles = makeStyles({
   root: {
@@ -70,32 +71,32 @@ const Profile = () => {
           >
             <Button style={{ display: 'block' }}>
               <IconButton>
-                <HomeOutlinedIcon />
+                <HomeOutlined />
               </IconButton>
               <Typography style={{ fontSize: '10px' }}>Home</Typography>
             </Button>
             <Button style={{ display: 'block' }}>
               <IconButton>
-                <NearMeOutlinedIcon />
+                <NearMeOutlined />
               </IconButton>
 
               <Typography style={{ fontSize: '10px' }}>Pay Merchant</Typography>
             </Button>
             <Button style={{ display: 'block' }}>
               <IconButton>
-                <SyncAltOutlinedIcon />
+                <SyncAltOutlined />
               </IconButton>
               <Typography style={{ fontSize: '10px' }}>Transfer</Typography>
             </Button>
             <Button style={{ display: 'block' }}>
               <IconButton>
-                <AccessTimeOutlinedIcon />
+                <AccessTimeOutlined />
               </IconButton>
               <Typography style={{ fontSize: '10px' }}>Budget</Typography>
             </Button>
             <Button style={{ display: 'block' }}>
               <IconButton>
-                <Person2OutlinedIcon />
+                <PersonOutlineOutlined />
               </IconButton>
               <Typography style={{ fontSize: '10px' }}>Profile</Typography>
             </Button>
@@ -158,14 +159,18 @@ const Profile = () => {
                 style={{
                   background: ' #F5D3FA',
                   borderRadius: '4px',
-                  width: '24px',
-                  height: '24px',
+                  width: '5px',
+                  height: '5px',
                   flex: 'none',
                   order: '0',
                   flexGrow: '0',
                 }}
               >
-                <ManageAccountsOutlinedIcon />
+                <Avatar
+                  alt='Uset settings'
+                  src={User}
+                  style={{ width: '20px', height: '20px' }}
+                />
               </IconButton>
               <Typography style={{ paddingLeft: '1rem' }}>
                 Account Settings
@@ -173,7 +178,7 @@ const Profile = () => {
             </Card>
           </Paper>
           <IconButton>
-            <KeyboardArrowRightOutlinedIcon />
+            <KeyboardArrowRightOutlined />
           </IconButton>
         </Paper>
 
@@ -218,7 +223,7 @@ const Profile = () => {
                   flexGrow: '0',
                 }}
               >
-                <PermIdentityOutlinedIcon />
+                <PermIdentityOutlined />
               </IconButton>
               <Typography style={{ paddingLeft: '1rem' }}>
                 Identity Verification
@@ -226,7 +231,7 @@ const Profile = () => {
             </Card>
           </Paper>
           <IconButton>
-            <KeyboardArrowRightOutlinedIcon />
+            <KeyboardArrowRightOutlined />
           </IconButton>
         </Paper>
         {/* 
@@ -265,7 +270,7 @@ const Profile = () => {
                   flexGrow: '0',
                 }}
               >
-                <HelpOutlineOutlinedIcon />
+                <HelpOutlineOutlined />
               </IconButton>
               <Typography style={{ paddingLeft: '1rem' }}>
                 Help Center
@@ -273,7 +278,7 @@ const Profile = () => {
             </Card>
           </Paper>
           <IconButton>
-            <KeyboardArrowRightOutlinedIcon />
+            <KeyboardArrowRightOutlined />
           </IconButton>
         </Paper>
 
@@ -311,7 +316,7 @@ const Profile = () => {
                   flexGrow: '0',
                 }}
               >
-                <GroupAddOutlinedIcon />
+                <GroupAddOutlined />
               </IconButton>
               <Typography style={{ paddingLeft: '1rem' }}>
                 Invite Friends & Family
@@ -319,7 +324,7 @@ const Profile = () => {
             </Card>
           </Paper>
           <IconButton>
-            <KeyboardArrowRightOutlinedIcon />
+            <KeyboardArrowRightOutlined />
           </IconButton>
         </Paper>
         {/* 
@@ -364,7 +369,7 @@ const Profile = () => {
             </Card>
           </Paper>
           <IconButton>
-            <KeyboardArrowRightOutlinedIcon />
+            <KeyboardArrowRightOutlined />
           </IconButton>
         </Paper>
 
@@ -403,13 +408,13 @@ const Profile = () => {
                   flexGrow: '0',
                 }}
               >
-                <LogoutOutlinedIcon />
+                <LogoutOutlined style={{ width: '20px', height: '20px' }} />
               </IconButton>
               <Typography style={{ paddingLeft: '1rem' }}>Logout</Typography>
             </Card>
           </Paper>
           <IconButton>
-            <KeyboardArrowRightOutlinedIcon />
+            <KeyboardArrowRightOutlined />
           </IconButton>
         </Paper>
       </Paper>

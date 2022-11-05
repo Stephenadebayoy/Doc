@@ -11,9 +11,9 @@ import {
   CardActions,
 } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import WarningAmberOutlinedIcon from '@mui/icons-material/WarningAmberOutlined';
-import NavigateBeforeOutlinedIcon from '@mui/icons-material/NavigateBeforeOutlined';
-import CameraAltOutlinedIcon from '@mui/icons-material/CameraAltOutlined';
+import WarningOutlined from '@material-ui/icons/WarningOutlined';
+import NavigateBeforeOutlined from '@material-ui/icons/NavigateBeforeOutlined';
+import CameraAltOutlined from '@material-ui/icons/CameraAltOutlined';
 
 const useStyles = makeStyles({
   root: {
@@ -78,7 +78,7 @@ const Identity = () => {
               borderRadius: '8px',
             }}
           >
-            <NavigateBeforeOutlinedIcon />
+            <NavigateBeforeOutlined />
           </IconButton>
           <Typography
             style={{
@@ -136,7 +136,7 @@ const Identity = () => {
                         flexGrow: '0',
                       }}
                     >
-                      <WarningAmberOutlinedIcon />
+                      <WarningOutlined />
                     </IconButton>
                     <Typography variant='body2' color='text.secondary'>
                       Pending
@@ -197,7 +197,7 @@ const Identity = () => {
                           borderRadius: '4px',
                         }}
                       >
-                        <CameraAltOutlinedIcon />
+                        <CameraAltOutlined />
                       </IconButton>
                     </div>
                     <Typography
@@ -243,7 +243,7 @@ const Identity = () => {
                           flexGrow: '0',
                         }}
                       >
-                        <WarningAmberOutlinedIcon />
+                        <WarningOutlined />
                       </IconButton>
                       <Typography variant='body2' color='text.secondary'>
                         Pending
@@ -303,7 +303,7 @@ const Identity = () => {
                             borderRadius: '4px',
                           }}
                         >
-                          <CameraAltOutlinedIcon />
+                          <CameraAltOutlined />
                         </IconButton>
                       </div>
                       <Typography
@@ -352,7 +352,7 @@ const Identity = () => {
               color: '#fff',
             }}
           >
-            <WarningAmberOutlinedIcon />
+            <WarningOutlined />
           </IconButton>
 
           <Typography

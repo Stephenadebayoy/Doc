@@ -11,10 +11,10 @@ import {
   CardActions,
 } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import WarningAmberOutlinedIcon from '@mui/icons-material/WarningAmberOutlined';
-import NavigateBeforeOutlinedIcon from '@mui/icons-material/NavigateBeforeOutlined';
-import CameraAltOutlinedIcon from '@mui/icons-material/CameraAltOutlined';
-import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutlineOutlined';
+import WarningAmberOutlinedIcon from '@material-ui/icons/WarningOutlined';
+import NavigateBeforeOutlinedIcon from '@material-ui/icons/NavigateBeforeOutlined';
+import CameraAltOutlined from '@material-ui/icons/CameraAltOutlined';
+import CheckCircleOutlineOutlined from '@material-ui/icons/CheckCircleOutlineOutlined';
 
 const useStyles = makeStyles({
   root: {
@@ -198,7 +198,7 @@ const Identity = () => {
                           borderRadius: '4px',
                         }}
                       >
-                        <CameraAltOutlinedIcon />
+                        <CameraAltOutlined />
                       </IconButton>
                     </div>
                     <Typography
@@ -246,7 +246,7 @@ const Identity = () => {
                           color: '#ffffff',
                         }}
                       >
-                        <CheckCircleOutlineOutlinedIcon />
+                        <CheckCircleOutlineOutlined />
                       </IconButton>
                       <Typography
                         variant='body2'
@@ -310,7 +310,7 @@ const Identity = () => {
                             borderRadius: '4px',
                           }}
                         >
-                          <CameraAltOutlinedIcon />
+                          <CameraAltOutlined />
                         </IconButton>
                       </div>
                       <Typography

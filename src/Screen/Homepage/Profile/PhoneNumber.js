@@ -9,8 +9,8 @@ import {
   TextField,
   Button,
 } from '@material-ui/core';
-import NavigateBeforeOutlinedIcon from '@mui/icons-material/NavigateBeforeOutlined';
-import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined';
+import NavigateBeforeOutlinedIcon from '@material-ui/icons/NavigateBeforeOutlined';
+import KeyboardArrowRightOutlinedIcon from '@material-ui/icons/KeyboardArrowRightOutlined';
 
 const useStyles = makeStyles({
   root: {

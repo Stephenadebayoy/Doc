@@ -1,10 +1,14 @@
-import * as React from 'react';
-import { styled } from '@mui/material/styles';
-import Card from '@mui/material/Card';
-import CardMedia from '@mui/material/CardMedia';
-import CardActions from '@mui/material/CardActions';
-import Typography from '@mui/material/Typography';
-import { makeStyles, Paper } from '@material-ui/core';
+import React from 'react';
+
+import {
+  makeStyles,
+  Paper,
+  Card,
+  CardMedia,
+  CardActions,
+  Typography,
+} from '@material-ui/core';
+
 import House from '../src/asset/home2.png';
 
 import House2 from '../src/asset/home1.png';

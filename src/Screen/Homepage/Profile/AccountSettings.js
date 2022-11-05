@@ -9,14 +9,15 @@ import {
   IconButton,
   InputAdornment,
   Button,
+  TextField,
 } from '@material-ui/core';
 import profile from '../../../asset/profile1.png';
-import NavigateBeforeOutlinedIcon from '@mui/icons-material/NavigateBeforeOutlined';
-import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined';
-import TextField from '@mui/material/TextField';
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
-import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
+import NavigateBeforeOutlined from '@material-ui/icons/NavigateBeforeOutlined';
+import KeyboardArrowRightOutlined from '@material-ui/icons/KeyboardArrowRightOutlined';
+
+// import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+// import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
+// import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { Link } from 'react-router-dom';
 const useStyles = makeStyles({
   root: {
@@ -67,7 +68,7 @@ const AccountSettings = () => {
               borderRadius: '8px',
             }}
           >
-            <NavigateBeforeOutlinedIcon />
+            <NavigateBeforeOutlined />
           </IconButton>
           <Typography
             style={{
@@ -159,12 +160,13 @@ const AccountSettings = () => {
             InputProps={{
               endAdornment: (
                 <InputAdornment position='end'>
-                  {<KeyboardArrowRightOutlinedIcon />}
+                  {<KeyboardArrowRightOutlined />}
                 </InputAdornment>
               ),
             }}
           />
           <TextField
+            variant='outlined'
             label='Country'
             id='country'
             type={'text'}
@@ -176,19 +178,20 @@ const AccountSettings = () => {
               position: 'absolute',
               flexDirection: 'column',
               justifyContent: 'center',
-              top: '435px',
-              left: '42px',
+              top: '440px',
+              left: '50px',
               background: '#F2F2F2',
             }}
             InputProps={{
               endAdornment: (
                 <InputAdornment position='end'>
-                  {<KeyboardArrowRightOutlinedIcon />}
+                  {<KeyboardArrowRightOutlined />}
                 </InputAdornment>
               ),
             }}
           />
           <TextField
+            variant='outlined'
             label='Phone number'
             id='number'
             type={'number'}
@@ -201,19 +204,56 @@ const AccountSettings = () => {
               flexDirection: 'column',
               justifyContent: 'center',
               top: '505px',
-              left: '42px',
+              left: '50px',
               background: '#F2F2F2',
             }}
             InputProps={{
               endAdornment: (
                 <InputAdornment position='end'>
-                  {<KeyboardArrowRightOutlinedIcon />}
+                  {<KeyboardArrowRightOutlined />}
                 </InputAdornment>
               ),
             }}
           />
+          <TextField
+            type={'date'}
+            variant='outlined'
+            required
+            sx={{ m: 1, width: '25ch' }}
+            style={{
+              position: 'absolute',
+              top: '570px',
+              width: '312px',
+              height: '54px',
+              background: '#F2F2F2',
+              borderRadius: '5px',
+              left: '50px',
+            }}
+            InputProps={{
+              endAdornment: (
+                <InputAdornment position='end'>
+                  {<KeyboardArrowRightOutlined />}
+                </InputAdornment>
+              ),
+            }}
+          />
+          {/* <input
+            type='date'
+            name=''
+            id=''
+            style={{
+              position: 'absolute',
+              top: '570px',
+              width: '312px',
+              height: '54px',
+              background: '#F2F2F2',
+              border: '1px solid #c0c0c0',
+              borderRadius: '5px',
+              left: '50px',
+            }}
+          /> */}
           {/* date-fns and @mui/x-date-pickers */}
-          <LocalizationProvider dateAdapter={AdapterDateFns}>
+          {/* <LocalizationProvider dateAdapter={AdapterDateFns}>
             <MobileDatePicker
               label='Date of birth'
               format='MM/dd/yyy'
@@ -228,7 +268,7 @@ const AccountSettings = () => {
                   InputProps={{
                     endAdornment: (
                       <InputAdornment position='end'>
-                        {<KeyboardArrowRightOutlinedIcon />}
+                        {<KeyboardArrowRightOutlined />}
                       </InputAdornment>
                     ),
                   }}
@@ -245,7 +285,7 @@ const AccountSettings = () => {
                 />
               )}
             />
-          </LocalizationProvider>
+          </LocalizationProvider> */}
         </Box>
         <Button
           style={{
