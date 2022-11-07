@@ -48,6 +48,7 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
     marginLeft: '0.6rem',
+    color: '#ffffff',
   },
 }));
 
@@ -82,7 +83,11 @@ const Homepage = () => {
 
             <Typography style={{ fontSize: '10px' }}>Pay Merchant</Typography>
           </Button>
-          <Button component={Link} to='/transfer' style={{ display: 'block' }}>
+          <Button
+            component={Link}
+            to='/transfer'
+            style={{ display: 'block', marginTop: '4px', marginLeft: '5px' }}
+          >
             <IconButton>
               <SyncAltOutlined />
             </IconButton>
@@ -98,7 +103,11 @@ const Homepage = () => {
             <IconButton>
               <PersonOutlineOutlined />
             </IconButton>
-            <Typography style={{ fontSize: '10px' }}>Profile</Typography>
+            <Typography
+              style={{ fontSize: '10px', marginTop: '4px', marginLeft: '5px' }}
+            >
+              Profile
+            </Typography>
           </Button>
         </Card>
       </div>
@@ -136,7 +145,7 @@ const Homepage = () => {
           </div>
         </Toolbar>
         <Box style={{ margin: '5.5rem 1.5rem' }}>
-          <Typography>R1,500</Typography>
+          <Typography style={{ color: '#ffffff' }}>R1,500</Typography>
           <div
             style={{
               float: 'left',
@@ -152,6 +161,7 @@ const Homepage = () => {
               fontFamily: 'sans-serif',
               padding: '0.2rem 1.5rem',
               position: 'absolute',
+              color: '#ffffff',
             }}
           >
             Current Wallet Balance

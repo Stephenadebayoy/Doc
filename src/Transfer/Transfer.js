@@ -76,7 +76,9 @@ const Transfer = () => {
             <IconButton>
               <HomeOutlined />
             </IconButton>
-            <Typography style={{ fontSize: '10px', marginLeft: '10px' }}>
+            <Typography
+              style={{ fontSize: '10px', marginLeft: '10px', marginTop: '4px' }}
+            >
               Home
             </Typography>
           </Button>
@@ -99,7 +101,11 @@ const Transfer = () => {
             </IconButton>
             <Typography style={{ fontSize: '10px' }}>Budget</Typography>
           </Button>
-          <Button component={Link} to='/profile' style={{ display: 'block' }}>
+          <Button
+            component={Link}
+            to='/profile'
+            style={{ display: 'block', marginTop: '4px' }}
+          >
             <IconButton>
               <PersonOutlineOutlined />
             </IconButton>
