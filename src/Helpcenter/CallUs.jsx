@@ -9,6 +9,7 @@ import {
 } from '@material-ui/core';
 import NavigateBeforeOutlined from '@material-ui/icons/NavigateBeforeOutlined';
 import Call from '../asset/call.png';
+import { Link } from 'react-router-dom';
 const useStyles = makeStyles({
   root: {
     width: '370px',
@@ -30,8 +31,10 @@ const Callus = () => {
   return (
     <Box className={classes.root}>
       <Paper elevation={0} className={classes.root2}>
-        <div style={{ display: 'flex' }}>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
           <IconButton
+            component={Link}
+            to='/gethelp'
             style={{
               width: '25px',
               height: '25px',

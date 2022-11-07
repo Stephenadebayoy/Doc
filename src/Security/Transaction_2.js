@@ -48,7 +48,7 @@ const Transaction_2 = () => {
           </IconButton>
           <Typography
             style={{
-              marginLeft: '7rem',
+              marginLeft: '5.5rem',
               marginTop: '0.7rem',
               fontWeight: 700,
             }}

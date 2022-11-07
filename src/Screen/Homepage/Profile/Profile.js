@@ -69,7 +69,11 @@ const Profile = () => {
               borderBottomLeftRadius: '1rem',
             }}
           >
-            <Button style={{ display: 'block' }}>
+            <Button
+              component={Link}
+              to='/homepage'
+              style={{ display: 'block', marginTop: '4px' }}
+            >
               <IconButton>
                 <HomeOutlined />
               </IconButton>
@@ -82,7 +86,11 @@ const Profile = () => {
 
               <Typography style={{ fontSize: '10px' }}>Pay Merchant</Typography>
             </Button>
-            <Button style={{ display: 'block' }}>
+            <Button
+              component={Link}
+              to='/transfer'
+              style={{ display: 'block', marginTop: '4px' }}
+            >
               <IconButton>
                 <SyncAltOutlined />
               </IconButton>
@@ -239,12 +247,15 @@ const Profile = () => {
 
         <Paper
           elevation={2}
+          component={Link}
+          to='/gethelp'
           style={{
             display: 'flex',
             justifyContent: 'space-between',
             padding: '16px',
             margin: '1.8rem 0',
             position: 'absolute',
+            textDecoration: 'none',
             width: '312px',
             height: '35px',
             top: '352px',
@@ -331,6 +342,8 @@ const Profile = () => {
         fifth */}
 
         <Paper
+          component={Link}
+          to='/settings'
           elevation={2}
           style={{
             display: 'flex',
@@ -345,6 +358,7 @@ const Profile = () => {
             alignItems: 'center',
             gap: '16px',
             borderRadius: '4px',
+            textDecoration: 'none',
           }}
         >
           <Paper elevation={0}>

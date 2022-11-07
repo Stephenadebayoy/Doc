@@ -7,9 +7,10 @@ import {
   IconButton,
   TextField,
   InputAdornment,
+  Button,
 } from '@material-ui/core';
 import NavigateBeforeOutlined from '@material-ui/icons/NavigateBeforeOutlined';
-
+import { Link } from 'react-router-dom';
 import { EyeInvisibleOutlined } from '@ant-design/icons';
 
 const useStyles = makeStyles({
@@ -28,16 +29,21 @@ const useStyles = makeStyles({
     margin: '1rem',
   },
 });
-const Transactionpin = () => {
+const ResetPassword = () => {
   const classes = useStyles();
+  const str = 'Finish';
+  const submit = str.charAt(0).toLowerCase().toUpperCase() + str.slice(1);
+
   return (
     <Box className={classes.root}>
       <Paper elevation={0} className={classes.root2}>
-        <div style={{ display: 'flex' }}>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
           <IconButton
+            component={Link}
+            to='/settings'
             style={{
-              width: '30px',
-              height: '30px',
+              width: '24px',
+              height: '24px',
               background: ' #F5D3FA',
               borderRadius: '8px',
               marginTop: '0.5rem',
@@ -48,17 +54,17 @@ const Transactionpin = () => {
           <Typography
             style={{
               marginLeft: '6rem',
-              marginTop: '0.7rem',
+              marginTop: '1rem',
               fontWeight: 700,
             }}
           >
-            Transaction PIN
+            Reset Password
           </Typography>
         </div>
 
         <Typography
           style={{
-            width: '55px',
+            width: '84px',
             height: '14px',
             top: '120px',
             left: '30px',
@@ -68,7 +74,7 @@ const Transactionpin = () => {
             lineHeight: '13.62px',
           }}
         >
-          Current PIN
+          Current Password
         </Typography>
         <TextField
           variant='outlined'
@@ -91,11 +97,7 @@ const Transactionpin = () => {
           InputProps={{
             endAdornment: (
               <InputAdornment position='end'>
-                {
-                  <EyeInvisibleOutlined
-                    style={{ color: '#09AD0E', width: '40px' }}
-                  />
-                }
+                {<EyeInvisibleOutlined style={{ width: '40px' }} />}
               </InputAdornment>
             ),
           }}
@@ -105,17 +107,17 @@ const Transactionpin = () => {
 
         <Typography
           style={{
-            width: '55px',
+            width: '69px',
             height: '14px',
             top: '226px',
-            left: '25px',
+            left: '30px',
             position: 'absolute',
             fontSize: '10px',
             color: '#8a8a8a',
             lineHeight: '13.62px',
           }}
         >
-          New PIN
+          New Password
         </Typography>
         <TextField
           variant='outlined'
@@ -138,9 +140,7 @@ const Transactionpin = () => {
           InputProps={{
             endAdornment: (
               <InputAdornment position='end'>
-                <EyeInvisibleOutlined
-                  style={{ color: '#09AD0E', width: '40px' }}
-                />
+                <EyeInvisibleOutlined style={{ width: '40px' }} />
               </InputAdornment>
             ),
           }}
@@ -149,7 +149,7 @@ const Transactionpin = () => {
         {/* third */}
         <Typography
           style={{
-            width: '81px',
+            width: '109px',
             height: '14px',
             top: '335px',
             left: '30px',
@@ -159,7 +159,7 @@ const Transactionpin = () => {
             lineHeight: '13.62px',
           }}
         >
-          Confirm New PIN
+          Confirm New Password
         </Typography>
         <TextField
           variant='outlined'
@@ -182,15 +182,37 @@ const Transactionpin = () => {
           InputProps={{
             endAdornment: (
               <InputAdornment position='end'>
-                <EyeInvisibleOutlined
-                  style={{ color: '#09AD0E', width: '40px' }}
-                />
+                <EyeInvisibleOutlined style={{ width: '40px' }} />
               </InputAdornment>
             ),
           }}
         />
+        <Button
+          style={{
+            position: 'absolute',
+            width: '312px',
+            height: '50px',
+            top: '470px',
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+            padding: '10px 24px',
+            background: '#AE1EC7',
+            borderRadius: '40px',
+            gap: '8px',
+            left: '50px',
+            color: '#ffffff',
+            fontSize: '16px',
+            fontWeight: 700,
+            fontFamily: 'helvetica',
+            textTransform: 'none',
+          }}
+        >
+          {submit}
+        </Button>
       </Paper>
     </Box>
   );
 };
-export default Transactionpin;
+export default ResetPassword;

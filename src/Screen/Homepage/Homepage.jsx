@@ -35,6 +35,12 @@ const useStyles = makeStyles((theme) => ({
     border: '3px solid #000000',
     flexGrow: 1,
     boxShadow: '0px 4px 4px #00000',
+    scrollBehavior: 'smooth',
+    overflow: 'scroll',
+  },
+  scroll: {
+    width: '200px',
+    height: '400px',
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -76,7 +82,7 @@ const Homepage = () => {
 
             <Typography style={{ fontSize: '10px' }}>Pay Merchant</Typography>
           </Button>
-          <Button style={{ display: 'block' }}>
+          <Button component={Link} to='/transfer' style={{ display: 'block' }}>
             <IconButton>
               <SyncAltOutlined />
             </IconButton>

@@ -11,6 +11,7 @@ import {
 import NavigateBeforeOutlined from '@material-ui/icons/NavigateBeforeOutlined';
 import HelpOutlineOutlined from '@material-ui/icons/HelpOutlineOutlined';
 import Search from '@material-ui/icons/Search';
+import { Link } from 'react-router-dom';
 const useStyles = makeStyles({
   root: {
     width: '370px',
@@ -33,11 +34,13 @@ const Faqs = () => {
   return (
     <Box className={classes.root}>
       <Paper elevation={0} className={classes.root2}>
-        <div style={{ display: 'flex' }}>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
           <IconButton
+            component={Link}
+            to='/gethelp'
             style={{
-              width: '30px',
-              height: '30px',
+              width: '24px',
+              height: '24px',
               background: ' #F5D3FA',
               borderRadius: '8px',
               marginTop: '0.5rem',

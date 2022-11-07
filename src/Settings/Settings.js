@@ -7,14 +7,13 @@ import {
   Typography,
   Card,
 } from '@material-ui/core';
-import { Link } from 'react-router-dom';
 import NavigateBeforeOutlined from '@material-ui/icons/NavigateBeforeOutlined';
-import PhoneOutlined from '@material-ui/icons/PhoneOutlined';
-import KeyboardArrowRightOutlinedIcon from '@material-ui/icons/KeyboardArrowRightOutlined';
-import MailOutlined from '@material-ui/icons/MailOutlineOutlined';
-import CommentOutlined from '@material-ui/icons/CommentOutlined';
-import HelpOutlineOutlined from '@material-ui/icons/HelpOutlineOutlined';
-
+import Toggle from '../asset/toggle.png';
+import { Link } from 'react-router-dom';
+import KeyboardArrowRightOutlined from '@material-ui/icons/KeyboardArrowRightOutlined';
+import DescriptionOutlined from '@material-ui/icons/DescriptionOutlined';
+import ShareAltOutlined from '@material-ui/icons/ShareOutlined';
+import Key from '../asset/key.png';
 const useStyles = makeStyles({
   root: {
     width: '370px',
@@ -31,7 +30,8 @@ const useStyles = makeStyles({
     margin: '1rem',
   },
 });
-const GetHelp = () => {
+
+const Settings = () => {
   const classes = useStyles();
   return (
     <Box className={classes.root}>
@@ -45,7 +45,7 @@ const GetHelp = () => {
               height: '24px',
               background: ' #F5D3FA',
               borderRadius: '8px',
-              marginTop: '0.6rem',
+              marginTop: '0.5rem',
             }}
           >
             <NavigateBeforeOutlined />
@@ -54,45 +54,27 @@ const GetHelp = () => {
             style={{
               marginLeft: '5.5rem',
               marginTop: '0.7rem',
+              fontWeight: 700,
             }}
           >
-            Get Help
+            Settings
           </Typography>
         </div>
-        <Typography
-          style={{
-            left: '60px',
-            width: '268px',
-            height: '48px',
-            top: '128px',
-            position: 'absolute',
-            fontSize: '16px',
-            color: '#1e1e1e',
-            display: 'flex',
-            alignItem: 'flex-end',
-          }}
-        >
-          Got a problem? Let us know how we can help
-        </Typography>
         <Paper
-          component={Link}
-          to='/callus'
           elevation={2}
           style={{
             display: 'flex',
             justifyContent: 'space-between',
+            padding: '16px',
             margin: '1.4rem 0',
             position: 'absolute',
-            textDecoration: 'none',
             width: '312px',
             height: '56px',
-            top: '208px',
-            left: '24px',
+            top: '128px',
+            left: '30px',
             alignItems: 'center',
             gap: '16px',
             borderRadius: '4px',
-            boxShadow: '0px 1px 4px rgba(0, 0, 0, 0.25)',
-            paddingLeft: '10px',
           }}
         >
           <Paper elevation={0}>
@@ -108,40 +90,46 @@ const GetHelp = () => {
                 style={{
                   background: ' #F5D3FA',
                   borderRadius: '4px',
-                  width: '14px',
-                  height: '10px',
+                  width: '24px',
+                  height: '24px',
                   flex: 'none',
                   order: '0',
                   flexGrow: '0',
                 }}
               >
-                <PhoneOutlined />
+                <ShareAltOutlined />
               </IconButton>
-              <Typography style={{ paddingLeft: '1rem' }}>Call Us</Typography>
+              <Typography style={{ paddingLeft: '1rem' }}>
+                Share with friends
+              </Typography>
             </Card>
           </Paper>
+
           <IconButton>
-            <KeyboardArrowRightOutlinedIcon />
+            <KeyboardArrowRightOutlined />
           </IconButton>
         </Paper>
 
         {/* second */}
+
         <Paper
+          component={Link}
+          to='/resetpassword'
           elevation={2}
           style={{
             display: 'flex',
             justifyContent: 'space-between',
+            padding: '16px',
             margin: '1.4rem 0',
             position: 'absolute',
             width: '312px',
             height: '56px',
-            top: '271px',
-            left: '24px',
+            top: '230px',
+            left: '30px',
             alignItems: 'center',
+            textDecoration: 'none',
             gap: '16px',
             borderRadius: '4px',
-            boxShadow: '0px 1px 4px rgba(0, 0, 0, 0.25)',
-            paddingLeft: '10px',
           }}
         >
           <Paper elevation={0}>
@@ -157,20 +145,33 @@ const GetHelp = () => {
                 style={{
                   background: ' #F5D3FA',
                   borderRadius: '4px',
-                  width: '14px',
-                  height: '10px',
+                  width: '24px',
+                  height: '24px',
                   flex: 'none',
                   order: '0',
                   flexGrow: '0',
                 }}
               >
-                <MailOutlined />
+                <Typography
+                  style={{
+                    width: '20px',
+                    height: '4px',
+                    top: '5px',
+                    left: '0.1px',
+                    position: 'absolute',
+                  }}
+                >
+                  <Box component='img' style={{ width: '20px' }} src={Key} />
+                </Typography>
               </IconButton>
-              <Typography style={{ paddingLeft: '1rem' }}>Email Us</Typography>
+              <Typography style={{ paddingLeft: '1rem' }}>
+                Reset Password
+              </Typography>
             </Card>
           </Paper>
+
           <IconButton>
-            <KeyboardArrowRightOutlinedIcon />
+            <KeyboardArrowRightOutlined />
           </IconButton>
         </Paper>
 
@@ -180,17 +181,16 @@ const GetHelp = () => {
           style={{
             display: 'flex',
             justifyContent: 'space-between',
+            padding: '16px',
             margin: '1.4rem 0',
             position: 'absolute',
             width: '312px',
             height: '56px',
-            top: '336px',
-            left: '24px',
+            top: '330px',
+            left: '30px',
             alignItems: 'center',
             gap: '16px',
             borderRadius: '4px',
-            boxShadow: '0px 1px 4px rgba(0, 0, 0, 0.25)',
-            paddingLeft: '10px',
           }}
         >
           <Paper elevation={0}>
@@ -206,74 +206,23 @@ const GetHelp = () => {
                 style={{
                   background: ' #F5D3FA',
                   borderRadius: '4px',
-                  width: '14px',
-                  height: '10px',
+                  width: '24px',
+                  height: '24px',
                   flex: 'none',
                   order: '0',
                   flexGrow: '0',
                 }}
               >
-                <CommentOutlined />
+                <DescriptionOutlined />
               </IconButton>
               <Typography style={{ paddingLeft: '1rem' }}>
-                Chat with Us
+                Terms & Privacy Policy
               </Typography>
             </Card>
           </Paper>
-          <IconButton>
-            <KeyboardArrowRightOutlinedIcon />
-          </IconButton>
-        </Paper>
 
-        {/* fourth */}
-        <Paper
-          component={Link}
-          to='/faq'
-          elevation={2}
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            margin: '1.4rem 0',
-            position: 'absolute',
-            width: '312px',
-            textDecoration: 'none',
-            height: '56px',
-            top: '400px',
-            left: '24px',
-            alignItems: 'center',
-            gap: '16px',
-            borderRadius: '4px',
-            boxShadow: '0px 1px 4px rgba(0, 0, 0, 0.25)',
-            paddingLeft: '10px',
-          }}
-        >
-          <Paper elevation={0}>
-            <Card
-              elevation={0}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                textDecorationLine: 'none',
-              }}
-            >
-              <IconButton
-                style={{
-                  background: ' #F5D3FA',
-                  borderRadius: '4px',
-                  width: '14px',
-                  height: '10px',
-                  flex: 'none',
-                  order: '0',
-                  flexGrow: '0',
-                }}
-              >
-                <HelpOutlineOutlined />
-              </IconButton>
-              <Typography style={{ paddingLeft: '1rem' }}>FAQs </Typography>
-            </Card>
-          </Paper>
           <IconButton>
-            <KeyboardArrowRightOutlinedIcon />
+            <KeyboardArrowRightOutlined />
           </IconButton>
         </Paper>
       </Paper>
@@ -281,4 +230,4 @@ const GetHelp = () => {
   );
 };
 
-export default GetHelp;
+export default Settings;

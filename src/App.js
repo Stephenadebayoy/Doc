@@ -31,6 +31,13 @@ import Confirmpin from './Security/Confirmpin';
 import Transactionpin from './Security/Transactionpin';
 import Transaction from './Security/Transaction';
 import Transaction_2 from './Security/Transaction_2';
+import Settings from './Settings/Settings';
+import ResetPassword from './Settings/ResetPassword';
+import Transfer from './Transfer/Transfer';
+import History from './Transfer/History';
+import Transfer_2 from './Transfer/Transfer_2';
+import Send from './Transfer/Send';
+import Send_2 from './Transfer/Send_2';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -61,6 +68,13 @@ function App() {
         <Route path='transactionpin' element={<Transactionpin />} />
         <Route path='transaction' element={<Transaction />} />
         <Route path='transaction_2' element={<Transaction_2 />} />
+        <Route path='settings' element={<Settings />} />
+        <Route path='resetpassword' element={<ResetPassword />} />
+        <Route path='transfer' element={<Transfer />} />
+        <Route path='history' element={<History />} />
+        <Route path='transfer_2' element={<Transfer_2 />} />
+        <Route path='send' element={<Send />} />
+        <Route path='send_2' element={<Send_2 />} />
         {/* <Route path='recipereviewcard' element={<RecipeReviewCard />} /> */}
 
         <Route path='home' element={<Home />} />
