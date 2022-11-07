@@ -44,6 +44,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Send = () => {
+  const [cancel, setCancel] = React.useState(false);
   const classes = useStyles();
   return (
     <div className={classes.root}>
